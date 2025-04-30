@@ -5,7 +5,7 @@ const router = Router();
 console.log("ROutes");
 
 router.post('/addCart',auth, addTocart)
-router.patch('/updateCart',auth, removeCart)
+router.delete('/updateCart',auth, removeCart)
 router.get('/getCart',auth,  getAllCart)
 
 export default router
